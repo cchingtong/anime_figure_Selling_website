@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime thing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="css.css">
+    <style>
+.pagination ul{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 8px;
+  border-radius: 50px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.pagination ul li{
+  color: #2980b9;
+  list-style: none;
+  line-height: 45px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+.pagination ul li.numb{
+  list-style: none;
+  height: 45px;
+  width: 45px;
+  margin: 0 3px;
+  line-height: 45px;
+  border-radius: 50%;
+}
+.pagination ul li.numb.first{
+  margin: 0px 3px 0 -5px;
+}
+.pagination ul li.numb.last{
+  margin: 0px -5px 0 3px;
+}
+.pagination ul li.dots{
+  font-size: 22px;
+  cursor: default;
+}
+.pagination ul li.btn{
+  padding: 0 20px;
+  border-radius: 50px;
+}
+.pagination li.active,
+.pagination ul li.numb:hover,
+.pagination ul li:first-child:hover,
+.pagination ul li:last-child:hover{
+  color: #fff;
+  background: #2980b9;
+}
+
+    </style>
+</head>
+<body>
+
+    <header id="home">
+
+        <div class="header-1">
+        
+            <a href="index.html" > <img src="img/1697352-middle.png"  class="logo" alt=""> </a>
+        
+            <div class="form-container">
+                <form action="">
+                    <input type="search" placeholder="search products" id="search" /> 
+                    <label for="search" class="fas fa-search"></label>
+                </form>
+            </div>
+        
+        </div>
+        
+        <div class="header-2">
+        
+            <div id="menu" class="fas fa-bars"></div>
+        
+            <div class="navbar">
+                <ul>
+               <li><a href="index.html"> Home</a>  </li>  
+               <li><a href="product.html">Product</a></li>
+               <li><a href="newarr.html">New arrive</a></li>
+               <li><a href="featured.html">features</a> </li>
+               <li><a href="information.html">Information</a> </li>
+           </ul> 
+           </div>
+        
+           <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="product.html" class="fas fa-shopping-cart"></a>
+            <a href="login.html" class="fas fa-user"></a>
+        </div
+        </div>
+        
+        </header>
+
+        <section class="gallery" id="product">
+
+            <h1 class="heading"> <span> product  </span> </h1>
+            
+            <ul class="controls">
+                <li class="btn button-active" data-filter="all">all</li>
+                <li class="btn" data-filter="Clothing">Clothing</li>
+                <li class="btn" data-filter="Figures">Figures</li>
+                <li class="btn" data-filter="Accessoires">Accessoires</li>
+                <li class="btn" data-filter="Gift">Gift</li>
+            </ul>
+            
+            <div class="image-container">
+            
+                <div class="box Clothing">
+                    <div class="image">
+                        <img src="img product/cl/1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Chothing</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</a></button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="box Clothing">
+                    <div class="image">
+                        <img src="img product/cl/2.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Chothing</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="box Chothing">
+                    <div class="image">
+                        <img src="img product/cl/3.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Chothing</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="box Figures">
+                    <div class="image">
+                        <img src="img product/BAP00788_02.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Figures</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="box Figures">
+                    <div class="image">
+                        <img src="img product/BAP01386.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Figures</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="box Figures">
+                    <div class="image">
+                        <img src="img product/BAP01683.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Figures</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            
+                <div class="box Accessoires">
+                    <div class="image">
+                        <img src="img product/acc/1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Accessoires</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            
+                <div class="box Accessoires">
+                    <div class="image">
+                        <img src="img product/acc/2.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Accessoires</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            
+                <div class="box Accessoires">
+                    <div class="image">
+                        <img src="img product/acc/3.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Accessoires</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            
+                <div class="box Accessoires">
+                    <div class="image">
+                        <img src="img product/acc/4.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Accessoires</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            
+                <div class="box Accessoires">
+                    <div class="image">
+                        <img src="img product/acc/5.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Accessoires</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            
+                <div class="box Gift">
+                    <div class="image">
+                        <img src="img product/gift/1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Gift</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            
+                <div class="box Gift">
+                    <div class="image">
+                        <img src="img product/gift/2.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Gift</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            
+                <div class="box Gift">
+                    <div class="image">
+                        <img src="img product/gift/3.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Gift</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="box Figures">
+                    <div class="image">
+                        <img src="img product/BAP00788_02.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Figures</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="box Figures">
+                    <div class="image">
+                        <img src="img product/BAP01386.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Figures</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="box Figures">
+                    <div class="image">
+                        <img src="img product/BAP01683.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Figures</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            
+                <div class="box Accessoires">
+                    <div class="image">
+                        <img src="img product/acc/1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Accessoires</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            
+                <div class="box Accessoires">
+                    <div class="image">
+                        <img src="img product/acc/2.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Accessoires</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            
+                <div class="box Accessoires">
+                    <div class="image">
+                        <img src="img product/acc/3.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Accessoires</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            
+                <div class="box Accessoires">
+                    <div class="image">
+                        <img src="img product/acc/4.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Accessoires</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            
+                <div class="box Accessoires">
+                    <div class="image">
+                        <img src="img product/acc/5.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Accessoires</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            
+                <div class="box Gift">
+                    <div class="image">
+                        <img src="img product/gift/1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Gift</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            
+                <div class="box Gift">
+                    <div class="image">
+                        <img src="img product/gift/2.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Gift</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            
+                <div class="box Gift">
+                    <div class="image">
+                        <img src="img product/gift/3.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Gift</h3>
+                        <div class="subInfo">
+                            <button class="btn"> buy</button>
+                            <strong class="price">1000$</strong>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="pagination">
+                <ul> <!--pages or li are comes from javascript --> </ul>
+              </div>
+            
+            </section>
+            
+            
+            <section class="footer">
+
+                <div class="box-container">
+            
+                    <div class="box">
+                        <a href="#" class="logo"> <i class="fas fa-shopping-cart"></i>  shopping </a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique expedita molestiae distinctio facere beatae velit, maiores ullam molestias necessitatibus sapiente.</p>
+                    </div>
+            
+                    <div class="box">
+                        <h3>links</h3>
+                        <a href="index.html">home</a>
+                        <a href="product.html">product</a>
+                        <a href="newarr.html">New arrive</a>
+                        <a href="featured.html">Features</a>
+                        <a href="#">Information</a>
+                    </div>
+            
+                    <div class="box">
+                        <h3>contact us</h3>
+                        <p> <i class="fas fa-home"></i>
+                            My home
+                        </p>
+                        <p> <i class="fas fa-phone"></i>
+                            +855 123 456 78
+                        </p>
+                        <p> <i class="fas fa-globe"></i>
+                            cchingtong.student@puthisastra.edu.kh
+                        </p>
+                    </div>
+            
+                </div>
+            
+            
+            </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>
